@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("https://img.freepik.com/premium-vector/raised-hands-volunteering-blue-background-vector_77417-471.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .sign-up-container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+      border-color: #4CAF50;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .sign-up-with-google {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #4285f4; 
+      font-weight: bold;
+    }
+
+    .sign-up-with-google img {
+      width: 30px;
+      margin-right: 10px;
+      filter: none;
+    }
+
+    .sign-up-with-google:hover {
+      color: #3367d6;
+    }
+
+    .sign-up-with-google span {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="sign-up-container">
+    <h2>Welcome to Voluntary Service</h2>
+    <form id="sign-up-form">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter a password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="sign-up-with-google">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@7.21.0/icons/google.svg" alt="Google Logo">
+      <span>Sign Up with Google</span>
+    </div>
+  </div>
+
+  <script>
+    
+    const signUpForm = document.getElementById('sign-up-form');
+    const signUpWithGoogleButton = document.querySelector('.sign-up-with-google');
+
+    signUpForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+
+      if (password!== confirmPassword) {
+        alert('Passwords do not match');
+        return;
+      }
+er
+
+      alert('Sign-up successful!');
+      signUpForm.reset();
+    });
+
+    signUpWithGoogleButton.addEventListener('click', () => {
+
+      alert('Signing up with Google...');
+    });
+  </script>
+</body>
+</html>
