@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegant Attire - Online Clothing Boutique</title>
+  <style>
+   
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5; 
+    }
+
+    header {
+      background-color: #2c3e50; 
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    nav {
+      background-color: #ecf0f1; /* Soft, light gray background */
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #2c3e50;
+      text-decoration: none;
+      padding: 15px 25px;
+      margin: 0 15px;
+      font-size: 22px;
+      font-family: 'Playfair Display', serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2c3e50;
+      color: #fff;
+    }
+
+    .hero {
+      background-image: url("https://oladaniela.com/wp-content/uploads/2024/06/Portuguese-T-Shirts-Ola-Daniela-06700-351-1024x640.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 700px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 0 30px;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      margin-bottom: 25px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 28px;
+      margin-bottom: 50px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero button {
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 18px 35px;
+      font-size: 22px;
+      font-family: 'Playfair Display', serif;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #34495e;
+    }
+
+    .featured-products {
+      padding: 70px 30px;
+      text-align: center;
+    }
+
+    .featured-products h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px;
+      margin-bottom: 45px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 70px;
+    }
+
+    .product-grid img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 25px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-grid h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .product-grid p {
+      font-size: 22px;
+      color: #666;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Elegant Attire</h1>
+    <p>Online Clothing Boutique</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Sale</a>
+    <a href="#">New Arrivals</a>
+  </nav>
+  <div class="hero">
+    <div>
+      <h1>Discover the Latest Fashion Trends</h1>
+      <p>Explore our curated collection of high-quality clothing and accessories.</p>
+      <button>Shop Now</button>
+    </div>
+  </div>
+  <div class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div>
+        <img src="https://s3.amazonaws.com/com.stitchfix.blog/wp-content/uploads/2019/05/30105541/W_BLG_JuneMonthOfOutfits16.jpg" alt="Product 1">
+        <h3>$49.99</h3>
+       
+      </div>
+      <div>
+        <img src="https://i.pinimg.com/originals/7f/06/53/7f065344841581cfe3f25d97aa6665a8.jpg" alt="Product 2">
+        <h3>$59.99</h3>
+   
+      </div>
+      <div>
+        <img src="https://s3.amazonaws.com/com.stitchfix.blog/wp-content/uploads/2019/04/29171129/T4_W19_0011_BLG_Stitch-Fix-Guide-to-Skirts1.jpg" alt="Product 3">
+        <h3>$39.99</h3>
+        
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Elegant Attire. All rights reserved.</p>
+  </footer>
+</body>
+</html>
